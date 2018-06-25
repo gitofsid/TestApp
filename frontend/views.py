@@ -12,3 +12,7 @@ def welcomeToOrganDontation():
 @app.route('/google', methods=['GET'])
 def takeToGoole():
     return redirect('http://www.google.com')
+
+@app.route('/another', methods=['GET'])
+def takeToAnother():
+    return render_template('another.html')
