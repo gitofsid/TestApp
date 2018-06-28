@@ -15,3 +15,7 @@ def takeToGoole():
 @app.route('/another', methods=['GET'])
 def takeToAnother():
     return render_template('another.html')
+
+@app.route('/helloworld', methods=['GET'])
+def takeToHelloWorld():
+    return "<p>hello world</p>"
